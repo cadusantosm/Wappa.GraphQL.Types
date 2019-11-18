@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.0</TargetFramework>
+       <TargetFramework>netstandard2.0</TargetFramework>
         <Authors>Carlos Eduardo Moreira Santos</Authors>
         <Description>Adds GeoPoint scalar type.</Description>
         <Copyright>Carlos Eduardo Moreira Santos</Copyright>
@@ -11,6 +11,7 @@
         <RepositoryType>GIT</RepositoryType>
         <PackageTags>graphql geopoint</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
