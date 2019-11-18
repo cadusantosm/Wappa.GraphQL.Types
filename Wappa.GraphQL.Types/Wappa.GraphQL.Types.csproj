@@ -2,6 +2,15 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.0</TargetFramework>
+        <Authors>Carlos Eduardo Moreira Santos</Authors>
+        <Description>Adds GeoPoint scalar type.</Description>
+        <Copyright>Carlos Eduardo Moreira Santos</Copyright>
+        <PackageProjectUrl>https://github.com/cadusantosm/Wappa.GraphQL.Types</PackageProjectUrl>
+        <PackageLicenseUrl></PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/cadusantosm/Wappa.GraphQL.Types</RepositoryUrl>
+        <RepositoryType>GIT</RepositoryType>
+        <PackageTags>graphql geopoint</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
