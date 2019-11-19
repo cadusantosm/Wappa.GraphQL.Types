@@ -1,15 +1,15 @@
-using System.Collections.Generic;
-using System.Linq;
-using GraphQL;
 using GeoLibrary.Model;
+using GraphQL;
 using GraphQL.Language.AST;
 using GraphQL.Types;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Wappa.GraphQL.Types
 {
-      public class GeoPointGraphType : ScalarGraphType
+    public class GeoPointGraphType : ScalarGraphType
     {
         public GeoPointGraphType()
         {
@@ -67,8 +67,8 @@ namespace Wappa.GraphQL.Types
             if (value != null && value is List<object> lstValue)
             {
 
-                double.TryParse(lstValue[0].ToString(), out double lat);
-                double.TryParse(lstValue[1].ToString(), out double lon);
+                double.TryParse(lstValue[0].ToString(), out var lat);
+                double.TryParse(lstValue[1].ToString(), out var lon);
 
                 return new Point(lon, lat);
             }
@@ -86,8 +86,8 @@ namespace Wappa.GraphQL.Types
             if (value != null && value is List<object> lstValue)
             {
 
-                double.TryParse(lstValue[0].ToString(), out double lat);
-                double.TryParse(lstValue[1].ToString(), out double lon);
+                double.TryParse(lstValue[0].ToString(), out var lat);
+                double.TryParse(lstValue[1].ToString(), out var lon);
 
                 var result = new[] { lat, lon };
 

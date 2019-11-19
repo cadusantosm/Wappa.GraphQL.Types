@@ -17,6 +17,7 @@
     <ItemGroup>
       <PackageReference Include="GeoLibrary" Version="1.0.1" />
       <PackageReference Include="GraphQL" Version="2.4.0" />
+      <PackageReference Include="GraphQL.Server.Core" Version="3.4.0" />
     </ItemGroup>
 
 </Project>

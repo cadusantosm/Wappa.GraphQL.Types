@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wappa.GraphQL.Types", "Wappa.GraphQL.Types\Wappa.GraphQL.Types.csproj", "{A11FB8B3-866B-46A4-819A-3C709F88F408}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wappa.GraphQL.Types", "Wappa.GraphQL.Types\Wappa.GraphQL.Types.csproj", "{A11FB8B3-866B-46A4-819A-3C709F88F408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wappa.Graphql.Types.Tests", "Wappa.Graphql.Types.Tests\Wappa.Graphql.Types.Tests.csproj", "{4BFED61B-F309-4C50-B924-E8F91C0803E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,15 @@ Global
 		{A11FB8B3-866B-46A4-819A-3C709F88F408}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A11FB8B3-866B-46A4-819A-3C709F88F408}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A11FB8B3-866B-46A4-819A-3C709F88F408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BFED61B-F309-4C50-B924-E8F91C0803E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BFED61B-F309-4C50-B924-E8F91C0803E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BFED61B-F309-4C50-B924-E8F91C0803E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BFED61B-F309-4C50-B924-E8F91C0803E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C1074EC-90A6-4D1B-AEBA-B14DAF2274AB}
 	EndGlobalSection
 EndGlobal
