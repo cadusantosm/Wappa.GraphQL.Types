@@ -1,27 +1,27 @@
-﻿using Shouldly;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
+using System.Text;
+using Shouldly;
 using Wappa.GraphQL.Types;
 using Wappa.Graphql.Types.Tests.Util;
 using Xunit;
 
 namespace Wappa.Graphql.Types.Tests
 {
-    public class DegreesGraphTypeTests
+    public class MetersGraphTypeTests
     {
-        private readonly DegreesGraphType _degreesGraphType = new DegreesGraphType();
+        private readonly MetersGraphType _metersGraphType = new MetersGraphType();
 
         [Fact]
         public void Coerces_Null_To_Null()
         {
-            _degreesGraphType.ParseValue(null).ShouldBe(null);
+            _metersGraphType.ParseValue(null).ShouldBe(null);
         }
 
         [Fact]
         public void Coerces_Invalid_String_To_Exception()
         {
-            Should.Throw<FormatException>(() => _degreesGraphType.ParseValue("abcd"));
+            Should.Throw<FormatException>(() => _metersGraphType.ParseValue("abcd"));
         }
 
         [Fact]
@@ -33,7 +33,7 @@ namespace Wappa.Graphql.Types.Tests
         [Fact]
         public void Coerces_Double_To_Value()
         {
-            _degreesGraphType
+            _metersGraphType
                 .ParseValue(1.79769313486231e308)
                 .ShouldBe(1.79769313486231e308);
         }
