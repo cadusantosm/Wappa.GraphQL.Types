@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
        <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,7 +11,7 @@
         <RepositoryType>GIT</RepositoryType>
         <PackageTags>graphql geopoint</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>1.0.2</Version>
+        <Version>1.0.3</Version>
     </PropertyGroup>
 
     <ItemGroup>
