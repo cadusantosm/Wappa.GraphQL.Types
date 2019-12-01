@@ -18,12 +18,12 @@ namespace Wappa.GraphQL.Types
         {
             if (value == null) return null;
 
-            if (value.ToString().Length < 2 || value.ToString().Length > 2)
+            if (value.ToString().Length != 2)
                 throw new ArgumentException(
-                    "country code must be only two letter according with the with the [ISO 3166-1 Alpha 2 standard].");
-            
+                    "ISO 3166-1 Alpha 2 standard codes must be exactly 2 characters long.");
+
             if (value.ToString().Any(x => !char.IsLetter(x)))
-                throw new ArgumentException("Invalid country code. To more information check following wiki: (https://en.wikipedia.org/wiki/ISO_3166-1)");
+                throw new ArgumentException("ISO 3166-1 Alpha 2 standard codes must be composed of only alpha characters.");
             
             return base.ParseValue(value);
         }

@@ -17,7 +17,7 @@ namespace Wappa.Graphql.Types.Tests
         [Fact]
         public void should_derive_description()
         {
-            _moneyGraphType.Description.ShouldBe("The `money` scalar represents");
+            _moneyGraphType.Description.ShouldBe("The `Money` object type represents a monetary value.");
         }
     }
 }

@@ -8,19 +8,23 @@ namespace Wappa.GraphQL.Types
         public MoneyGraphType()
         {
             Name = "Money";
-            Description = "The `money` scalar represents monetary value";
+            Description = "The `Money` object type represents a monetary value.";
 
             Field(x => x.Amount, type: typeof(NonNullGraphType<FloatGraphType>))
-                .Description("The amount in currency");
+                .Name("amount")
+                .Description("The decimal amount.");
 
-            Field(x => x.Currency, type: typeof(NonNullGraphType<ISO3166A2GraphType>))
-                .Description("The code of currency");
+            Field(x => x.Currency, type: typeof(NonNullGraphType<ISO4217GraphType>))
+                .Name("currency")
+                .Description("The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code for this monetary value.");
 
             Field(x => x.Formatted, type: typeof(StringGraphType))
-                .Description("The amount formatted with country currency symbol");
+                .Name("formatted")
+                .Description("The formatted value to be displayed to users.");
 
             Field(x => x.Symbol, type: typeof(StringGraphType))
-                .Description("The country currency symbol");
+                .Name("symbol")
+                .Description("The currency symbol.");
         }
     }
 }
